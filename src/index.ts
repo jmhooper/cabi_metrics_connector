@@ -5,7 +5,7 @@ import { Registry, Gauge } from "prom-client";
 import { Station, fetchStationStatus } from "./cabi-client/stations";
 import logger from "./logger";
 
-const stationStatusCache = new NodeCache({ stdTTL: 60, checkperiod: 0 });
+const stationStatusCache = new NodeCache({ stdTTL: 30, checkperiod: 0 });
 
 const stationsStatuses: () => Promise<Station[]> = async () => {
   let statuses: Station[];

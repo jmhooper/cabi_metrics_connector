@@ -41,7 +41,7 @@ export const fetchStationInformation: () => Promise<StationMap> = async () => {
   stationInformationApiResponse.data.stations.forEach((station) => {
     result[station.station_id] = {
       name: station.name,
-      region: regionMap[station.region_id],
+      region: regionMap[station.region_id] || "",
       station_id: station.station_id,
       capacity: station.capacity,
       latitude: station.lat,

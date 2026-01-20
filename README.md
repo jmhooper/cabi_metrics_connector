@@ -18,16 +18,16 @@ The following metrics are provided:
 You can start the connector using docker:
 
 ```
-docker run -p 9090:9090 jmhooper/cabi-metrics-collector
+docker run -p 9090:9090 jmhooper/cabi_metrics_connector
 ```
 
 Alternatively you can use docker compose:
 
 ```yaml
 services:
-  cabi-metrics-collector:
-    image: jmhooper/cabi-metrics-collector
-    container_name: cabi-metrics-collector
+  cabi_metrics_connector:
+    image: jmhooper/cabi_metrics_connector
+    container_name: cabi_metrics_connector
     restart: unless-stopped
     ports:
       - "9090:9090"

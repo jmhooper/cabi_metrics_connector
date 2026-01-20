@@ -1,5 +1,5 @@
 {
-  "name": "cabi-metrics-collector",
+  "name": "cabi_metrics_connector",
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
